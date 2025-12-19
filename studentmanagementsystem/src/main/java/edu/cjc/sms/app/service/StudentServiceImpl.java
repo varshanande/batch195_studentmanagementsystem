@@ -1,6 +1,6 @@
 package edu.cjc.sms.app.service;
 
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,20 +12,16 @@ import edu.cjc.sms.app.repository.StudentRepository;
 public class StudentServiceImpl implements StudentServiceI {
 
 	@Autowired
-	StudentRepository sr;
+	private StudentRepository sr;
+
+	@Override
+	public void saveStudent(Student student) {
+	sr.save(student);
+		
+	}
 	
-	@Override
-	public List<Student> getStudent() {
-		// TODO Auto-generated method stub
-		return sr.findAll();
-	}
 
-	@Override
-	public void saveStudent(Student s) {
-		// TODO Auto-generated method stub
-		
-		sr.save(s);
-		
-	}
-
+	
+	
+	
 }

@@ -11,25 +11,25 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String studentName;
+	private String studentFullName;
 	private String studentEmail;
 	private int studentAge;
 	private String collageName;
-	private String courseName;
-	private String batchNumber;
+	private String feesPaid; 
+	private String studentCourse;
 	private String batchMode;
-	private String feesPaid;
+	private String batchNumber;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getStudentName() {
-		return studentName;
+	public String getStudentFullName() {
+		return studentFullName;
 	}
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
+	public void setStudentFullName(String studentFullName) {
+		this.studentFullName = studentFullName;
 	}
 	public String getStudentEmail() {
 		return studentEmail;
@@ -49,17 +49,17 @@ public class Student {
 	public void setCollageName(String collageName) {
 		this.collageName = collageName;
 	}
-	public String getCourseName() {
-		return courseName;
+	public String getFeesPaid() {
+		return feesPaid;
 	}
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
+	public void setFeesPaid(String feesPaid) {
+		this.feesPaid = feesPaid;
 	}
-	public String getBatchNumber() {
-		return batchNumber;
+	public String getStudentCourse() {
+		return studentCourse;
 	}
-	public void setBatchNumber(String batchNumber) {
-		this.batchNumber = batchNumber;
+	public void setStudentCourse(String studentCourse) {
+		this.studentCourse = studentCourse;
 	}
 	public String getBatchMode() {
 		return batchMode;
@@ -67,11 +67,11 @@ public class Student {
 	public void setBatchMode(String batchMode) {
 		this.batchMode = batchMode;
 	}
-	public String getFeesPaid() {
-		return feesPaid;
+	public String getBatchNumber() {
+		return batchNumber;
 	}
-	public void setFeesPaid(String feesPaid) {
-		this.feesPaid = feesPaid;
+	public void setBatchNumber(String batchNumber) {
+		this.batchNumber = batchNumber;
 	}
-
+	
 }
